@@ -1,0 +1,15 @@
+app:
+  name: chetan-galgali-poi-gateway-app
+  namespace: chetan-galgali
+  cluster: .apps.igb2792k.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-ms/chetan-galgali-gateway
+  org: rhdh-ms
+  name: chetan-galgali-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: chetan-galgali/poi-gateway-app
+  tag: latest
